@@ -367,7 +367,7 @@ const ProductsPage = () => {
               <Button 
                 variant="accent" 
                 size="xl"
-                className="animate-[pulse_5.5s_cubic-bezier(0.4,0,0.6,1)_infinite] shadow-xl hover:shadow-2xl"
+                className="animate-[pulse_10s_cubic-bezier(0.4,0,0.6,1)_infinite] shadow-xl hover:shadow-2xl"
                 onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}
               >
                 🛒 Visitar Nossa Loja Online
