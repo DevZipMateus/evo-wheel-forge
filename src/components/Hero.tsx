@@ -60,7 +60,7 @@ const Hero = () => {
                 Ver Produtos
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="text-slate-50">
                 Fale Conosco
               </Button>
             </div>
