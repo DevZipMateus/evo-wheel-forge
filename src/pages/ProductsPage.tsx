@@ -6,6 +6,7 @@ import { Star, ArrowRight, Zap, Shield, Award, ShoppingCart, Filter } from "luci
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("TODOS");
@@ -226,6 +227,7 @@ const ProductsPage = () => {
       </section>
 
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };

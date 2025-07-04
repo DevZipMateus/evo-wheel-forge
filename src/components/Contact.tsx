@@ -50,7 +50,12 @@ const Contact = () => {
                 <Textarea placeholder="Descreva o que você está procurando..." rows={4} />
               </div>
               
-              <Button variant="hero" size="lg" className="w-full">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="w-full"
+                onClick={() => window.open('https://wa.me/5511947783837', '_blank')}
+              >
                 Enviar Solicitação
               </Button>
             </CardContent>
