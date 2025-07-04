@@ -21,7 +21,25 @@ const ProductCarousel = () => {
     "/lovable-uploads/br-11134207-7r98o-m2ldnjbd9n9h08_tn.jpg",
     "/lovable-uploads/br-11134207-7r98o-m2qsvjs60ikz40_tn.jpg",
     "/lovable-uploads/br-11134207-7r98o-m3bcfpilqn9451_tn.jpg",
-    "/lovable-uploads/br-11134207-7r98o-m3gsehr88maj99_tn.jpg"
+    "/lovable-uploads/br-11134207-7r98o-m3gsehr88maj99_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m4j07r9t6fqt5a_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m6rboqp2ctpj4c_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m6rboqp2e89z10_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m6rchz0403lc8f_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m7b8qhavyhxm57_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m7b8qhaw447e26_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m7to1q2o842cea_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m7to1q2odqc47d_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m7to1q2ojclwc0_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m7ts6nmcd9qs4e.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8jb1vjaoemp3a_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8jb1vjawu1da3_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8um88io9on66e_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8uoxdwk41ky64_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8uoxdwkdvk231_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8uoxdwkgooy0e_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8upf4mvk9oi64_tn.jpg",
+    "/lovable-uploads/br-11134207-7r98o-m8upf4mvu3nm9c_tn.jpg"
   ];
 
   return (
