@@ -37,11 +37,11 @@ const ProductCarousel = () => {
         <CarouselContent>
           {productImages.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative aspect-video rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm">
+              <div className="relative aspect-square sm:aspect-video rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm">
                 <img
                   src={image}
                   alt={`Produto ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-carbon-black/20 to-transparent"></div>
               </div>
