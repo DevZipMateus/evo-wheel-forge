@@ -354,6 +354,27 @@ const ProductsPage = () => {
       
       <section className="py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
+          {/* Call to Action Section */}
+          <div className="text-center mb-16">
+            <div className="bg-gradient-to-r from-secondary/10 to-secondary/5 rounded-xl p-8 backdrop-blur-sm border border-border/20">
+              <h3 className="text-2xl lg:text-3xl font-bold mb-4">
+                <span className="text-foreground">Loja Online Completa</span>
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+                Temos uma loja online com todos os tamanhos e muito mais modelos de aros só esperando por você. 
+                Não perca tempo e venha conferir nossa variedade completa de produtos!
+              </p>
+              <Button 
+                variant="accent" 
+                size="xl"
+                className="animate-[pulse_5.5s_cubic-bezier(0.4,0,0.6,1)_infinite] shadow-xl hover:shadow-2xl"
+                onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}
+              >
+                🛒 Visitar Nossa Loja Online
+              </Button>
+            </div>
+          </div>
+
           {/* Header */}
           <div className="text-center mb-16">
             <Badge variant="outline" className="mb-4">
@@ -413,27 +434,6 @@ const ProductsPage = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Call to Action Section */}
-          <div className="text-center mt-16 mb-12">
-            <div className="bg-gradient-to-r from-secondary/10 to-secondary/5 rounded-xl p-8 backdrop-blur-sm border border-border/20">
-              <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-                <span className="text-foreground">Loja Online Completa</span>
-              </h3>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-                Temos uma loja online com todos os tamanhos e muito mais modelos de aros só esperando por você. 
-                Não perca tempo e venha conferir nossa variedade completa de produtos!
-              </p>
-              <Button 
-                variant="accent" 
-                size="xl"
-                className="animate-[pulse_2.5s_cubic-bezier(0.4,0,0.6,1)_infinite] shadow-xl hover:shadow-2xl"
-                onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}
-              >
-                🛒 Visitar Nossa Loja Online
-              </Button>
-            </div>
           </div>
 
           {/* Features Section */}

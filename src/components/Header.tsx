@@ -33,22 +33,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* User Actions */}
-          <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="hidden lg:block text-white hover:text-racing-orange">
-              <Search className="w-5 h-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-racing-orange">
-              <User className="w-5 h-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="relative text-white hover:text-racing-orange">
-              <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 bg-racing-orange text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                0
-              </span>
-            </Button>
-          </div>
-
           {/* Mobile Menu */}
           <Button variant="ghost" size="icon" className="md:hidden text-white hover:text-racing-orange">
             <Menu className="w-5 h-5" />
