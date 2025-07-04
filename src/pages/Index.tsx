@@ -1,9 +1,7 @@
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import CategoryBanner from "@/components/CategoryBanner";
-import FlashSale from "@/components/FlashSale";
-import BrandPartners from "@/components/BrandPartners";
+import ProductCarousel from "@/components/ProductCarousel";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -17,7 +15,6 @@ const Index = () => {
       <TopBar />
       <Header />
       <Hero />
-      <CategoryBanner />
       
       {/* Products Preview Section */}
       <section className="py-20 bg-secondary/20">
@@ -30,6 +27,9 @@ const Index = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Descubra nossa linha completa de rodas esportivas e pneus de alta performance
             </p>
+          </div>
+          <ProductCarousel />
+          <div className="text-center mt-12">
             <Link to="/produtos">
               <Button variant="hero" size="lg" className="group">
                 Ver Todos os Produtos
@@ -40,8 +40,6 @@ const Index = () => {
         </div>
       </section>
       
-      <FlashSale />
-      <BrandPartners />
       <Testimonials />
       <Contact />
       <Footer />
