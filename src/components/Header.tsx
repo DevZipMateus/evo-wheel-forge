@@ -4,7 +4,7 @@ import { Menu, Search, User, ShoppingCart, Phone } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-carbon-black/95 backdrop-blur-sm border-b border-border z-50">
+    <header className="fixed top-0 w-full bg-carbon-black/95 backdrop-blur-sm z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
