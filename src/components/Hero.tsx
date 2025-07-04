@@ -76,7 +76,7 @@ const Hero = () => {
             <div className="relative w-96 h-96 mx-auto flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-accent rounded-full animate-pulse-glow opacity-10"></div>
               <div className="absolute inset-8 bg-carbon-black/80 rounded-full backdrop-blur-sm flex items-center justify-center border border-racing-orange/20">
-                <img src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" alt="Evolução Rodas e Pneus - Logo" className="w-48 h-auto max-w-full object-contain" />
+                <img src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" alt="Evolução Rodas e Pneus - Logo" className="w-48 h-48 max-w-full object-contain rounded-full" />
               </div>
             </div>
           </div>
