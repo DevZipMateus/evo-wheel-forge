@@ -39,18 +39,18 @@ const Hero = () => {
             </div>
 
             {/* Features */}
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-card/50 rounded-lg backdrop-blur-sm">
-                <Zap className="w-6 h-6 text-racing-orange mx-auto mb-2" />
-                <p className="text-sm font-medium">Performance</p>
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
+              <div className="text-center p-2 sm:p-4 bg-card/50 rounded-lg backdrop-blur-sm">
+                <Zap className="w-4 h-4 sm:w-6 sm:h-6 text-racing-orange mx-auto mb-1 sm:mb-2" />
+                <p className="text-xs sm:text-sm font-medium">Performance</p>
               </div>
-              <div className="text-center p-4 bg-card/50 rounded-lg backdrop-blur-sm">
-                <Shield className="w-6 h-6 text-racing-orange mx-auto mb-2" />
-                <p className="text-sm font-medium">Qualidade</p>
+              <div className="text-center p-2 sm:p-4 bg-card/50 rounded-lg backdrop-blur-sm">
+                <Shield className="w-4 h-4 sm:w-6 sm:h-6 text-racing-orange mx-auto mb-1 sm:mb-2" />
+                <p className="text-xs sm:text-sm font-medium">Qualidade</p>
               </div>
-              <div className="text-center p-4 bg-card/50 rounded-lg backdrop-blur-sm">
-                <Star className="w-6 h-6 text-racing-orange mx-auto mb-2" />
-                <p className="text-sm font-medium">Estilo</p>
+              <div className="text-center p-2 sm:p-4 bg-card/50 rounded-lg backdrop-blur-sm">
+                <Star className="w-4 h-4 sm:w-6 sm:h-6 text-racing-orange mx-auto mb-1 sm:mb-2" />
+                <p className="text-xs sm:text-sm font-medium">Estilo</p>
               </div>
             </div>
 

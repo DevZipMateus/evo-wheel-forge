@@ -43,7 +43,7 @@ const ProductCarousel = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto px-4">
       <Carousel
         plugins={[
           Autoplay({

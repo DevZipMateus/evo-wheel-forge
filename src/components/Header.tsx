@@ -22,7 +22,7 @@ const Header = () => {
             </nav>
 
             {/* Search Bar */}
-            <div className="hidden lg:flex items-center space-x-2 rounded-full px-4 py-2 min-w-80 bg-gray-50">
+            <div className="hidden lg:flex items-center space-x-2 rounded-full px-4 py-2 w-80 max-w-[300px] bg-gray-50">
               <Search className="w-4 h-4 text-muted-foreground" />
               <Input placeholder="Buscar produtos..." className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 bg-transparent" />
             </div>

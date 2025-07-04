@@ -111,19 +111,29 @@
     scroll-behavior: smooth;
   }
   
+  /* Prevent horizontal overflow */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   ::-webkit-scrollbar-track {
     @apply bg-background;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     @apply bg-racing-orange rounded-full;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-warm-orange;
   }
