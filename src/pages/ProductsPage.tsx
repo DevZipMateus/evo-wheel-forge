@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +9,11 @@ import Footer from "@/components/Footer";
 
 const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("TODOS");
+  
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const categories = ["TODOS", "RODAS", "PNEUS", "KITS", "ACESSÓRIOS"];
   
