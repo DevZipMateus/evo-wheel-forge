@@ -43,6 +43,7 @@
     --light-orange: 24 100% 55%;      /* Lighter orange variant */
     --chrome-silver: 0 0% 75%;        /* Supporting neutral */
     --warm-gray: 0 0% 96%;            /* Light background variant */
+    --tech-blue: 212 100% 45%;        /* Technical blue for accents */
     
     /* Semantic gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--carbon-black)), hsl(var(--deep-black)));

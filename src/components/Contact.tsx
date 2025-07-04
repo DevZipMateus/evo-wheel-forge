@@ -66,13 +66,13 @@ const Contact = () => {
             <Card className="bg-card/80 backdrop-blur-sm border-border/50">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-tech-blue rounded-full flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-foreground" />
+                  <div className="w-12 h-12 bg-racing-orange rounded-full flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Telefone</h3>
                     <p className="text-muted-foreground">(11) 9999-9999</p>
-                    <p className="text-sm text-tech-blue">WhatsApp disponível</p>
+                    <p className="text-sm text-tech-blue font-medium">WhatsApp disponível</p>
                   </div>
                 </div>
               </CardContent>
@@ -81,13 +81,13 @@ const Contact = () => {
             <Card className="bg-card/80 backdrop-blur-sm border-border/50">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-tech-blue rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-foreground" />
+                  <div className="w-12 h-12 bg-racing-orange rounded-full flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">E-mail</h3>
                     <p className="text-muted-foreground">contato@evolucaorodas.com</p>
-                    <p className="text-sm text-tech-blue">Resposta em até 2h</p>
+                    <p className="text-sm text-tech-blue font-medium">Resposta em até 2h</p>
                   </div>
                 </div>
               </CardContent>
@@ -96,8 +96,8 @@ const Contact = () => {
             <Card className="bg-card/80 backdrop-blur-sm border-border/50">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-tech-blue rounded-full flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-foreground" />
+                  <div className="w-12 h-12 bg-racing-orange rounded-full flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Endereço</h3>
@@ -111,8 +111,8 @@ const Contact = () => {
             <Card className="bg-card/80 backdrop-blur-sm border-border/50">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-tech-blue rounded-full flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-foreground" />
+                  <div className="w-12 h-12 bg-racing-orange rounded-full flex items-center justify-center">
+                    <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Horário</h3>

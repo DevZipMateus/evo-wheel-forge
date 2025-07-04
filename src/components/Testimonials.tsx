@@ -43,8 +43,9 @@ const Testimonials = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {testimonials.map(testimonial => <Card key={testimonial.id} className="backdrop-blur-sm border-border/50 transition-colors duration-300 bg-slate-50">
-              <CardContent className="p-6 bg-gray-50">
+          {testimonials.map(testimonial => (
+            <Card key={testimonial.id} className="bg-card/80 backdrop-blur-sm border-border/50 transition-colors duration-300">
+              <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Quote className="w-8 h-8 text-tech-blue mb-2" />
                 </div>
@@ -54,7 +55,9 @@ const Testimonials = () => {
                 </p>
 
                 <div className="flex items-center mb-3">
-                  {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-racing-orange text-racing-orange" />)}
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-racing-orange text-racing-orange" />
+                  ))}
                 </div>
 
                 <div className="flex items-center space-x-3">
@@ -65,7 +68,8 @@ const Testimonials = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
       </div>
     </section>;

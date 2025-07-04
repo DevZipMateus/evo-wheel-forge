@@ -41,15 +41,15 @@ const Hero = () => {
             {/* Features */}
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-4 bg-card/50 rounded-lg backdrop-blur-sm">
-                <Zap className="w-6 h-6 text-tech-blue mx-auto mb-2" />
+                <Zap className="w-6 h-6 text-racing-orange mx-auto mb-2" />
                 <p className="text-sm font-medium">Performance</p>
               </div>
               <div className="text-center p-4 bg-card/50 rounded-lg backdrop-blur-sm">
-                <Shield className="w-6 h-6 text-tech-blue mx-auto mb-2" />
+                <Shield className="w-6 h-6 text-racing-orange mx-auto mb-2" />
                 <p className="text-sm font-medium">Qualidade</p>
               </div>
               <div className="text-center p-4 bg-card/50 rounded-lg backdrop-blur-sm">
-                <Star className="w-6 h-6 text-tech-blue mx-auto mb-2" />
+                <Star className="w-6 h-6 text-racing-orange mx-auto mb-2" />
                 <p className="text-sm font-medium">Estilo</p>
               </div>
             </div>

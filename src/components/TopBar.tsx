@@ -8,15 +8,15 @@ const TopBar = () => {
           {/* Contact Info */}
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              <Phone className="w-3 h-3 text-tech-blue" />
+              <Phone className="w-3 h-3 text-racing-orange" />
               <span>(11) 9999-9999</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Mail className="w-3 h-3 text-tech-blue" />
+              <Mail className="w-3 h-3 text-racing-orange" />
               <span>contato@evolucaorodas.com</span>
             </div>
             <div className="hidden md:flex items-center space-x-2">
-              <MapPin className="w-3 h-3 text-tech-blue" />
+              <MapPin className="w-3 h-3 text-racing-orange" />
               <span>São Paulo - SP</span>
             </div>
           </div>

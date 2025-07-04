@@ -19,7 +19,7 @@ const Products = () => {
       rating: 4.9,
       features: ["Liga Leve", "Design Exclusivo", "5 Anos Garantia"],
       badge: "MAIS VENDIDO",
-      badgeColor: "racing-orange"
+      badgeVariant: "accent"
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const Products = () => {
       rating: 4.8,
       features: ["Aderência Superior", "Baixo Ruído", "Longa Durabilidade"],
       badge: "LANÇAMENTO",
-      badgeColor: "tech-blue"
+      badgeVariant: "secondary"
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const Products = () => {
       rating: 5.0,
       features: ["4 Rodas + 4 Pneus", "Instalação Grátis", "Balanceamento"],
       badge: "OFERTA",
-      badgeColor: "chrome-silver"
+      badgeVariant: "outline"
     },
     {
       id: 4,
@@ -52,7 +52,7 @@ const Products = () => {
       rating: 4.7,
       features: ["Economia de Combustível", "Durabilidade", "Conforto"],
       badge: "POPULAR",
-      badgeColor: "tech-blue"
+      badgeVariant: "secondary"
     },
     {
       id: 5,
@@ -63,7 +63,7 @@ const Products = () => {
       rating: 4.6,
       features: ["Acabamento Premium", "Leveza", "Resistência"],
       badge: "NOVO",
-      badgeColor: "racing-orange"
+      badgeVariant: "accent"
     },
     {
       id: 6,
@@ -74,7 +74,7 @@ const Products = () => {
       rating: 4.4,
       features: ["Fácil Instalação", "Design Moderno", "Resistente"],
       badge: "PROMOÇÃO",
-      badgeColor: "chrome-silver"
+      badgeVariant: "outline"
     }
   ];
 
@@ -130,7 +130,8 @@ const Products = () => {
                     />
                   </div>
                   <Badge 
-                    className={`absolute top-3 right-3 bg-${product.badgeColor} text-foreground`}
+                    variant={product.badgeVariant as "default" | "secondary" | "destructive" | "outline"}
+                    className="absolute top-3 right-3"
                   >
                     {product.badge}
                   </Badge>
@@ -157,7 +158,7 @@ const Products = () => {
                   <div className="space-y-2">
                     {product.features.map((feature, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-tech-blue rounded-full"></div>
+                        <div className="w-2 h-2 bg-racing-orange rounded-full"></div>
                         <span className="text-sm text-muted-foreground">{feature}</span>
                       </div>
                     ))}
