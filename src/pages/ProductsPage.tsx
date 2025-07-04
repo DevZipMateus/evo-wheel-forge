@@ -168,45 +168,21 @@ const ProductsPage = () => {
                   {/* Product Info */}
                   <div className="space-y-4">
                     <div>
-                      <p className="text-tech-blue font-medium text-sm mb-1">{product.category}</p>
-                      <h3 className="text-xl font-bold text-foreground mb-2">{product.name}</h3>
-                      
-                      {/* Rating */}
-                      <div className="flex items-center space-x-2 mb-3">
-                        <div className="flex items-center">
-                          {[...Array(5)].map((_, i) => (
-                            <Star key={i} className="w-4 h-4 fill-racing-orange text-racing-orange" />
-                          ))}
-                        </div>
-                        <span className="text-sm text-muted-foreground">({product.rating})</span>
-                      </div>
+                      <h3 className="text-lg font-bold text-foreground mb-4 text-center">
+                        Para mais informações sobre tamanho, preço e modelo clique no botão abaixo
+                      </h3>
                     </div>
 
-                    {/* Features */}
-                    <div className="space-y-2">
-                      {product.features.map((feature, index) => (
-                        <div key={index} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-tech-blue rounded-full"></div>
-                          <span className="text-sm text-muted-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Price & CTA */}
-                    <div className="space-y-3 pt-4 border-t border-border">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <p className="text-2xl font-bold text-foreground">{product.price}</p>
-                          <p className="text-sm text-muted-foreground">à vista</p>
-                        </div>
-                        <Button variant="outline" size="sm" className="group">
-                          Ver Mais
-                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                      </div>
-                      <Button variant="hero" size="sm" className="w-full group">
-                        <ShoppingCart className="w-4 h-4 mr-2" />
-                        Adicionar ao Carrinho
+                    {/* CTA */}
+                    <div className="pt-4">
+                      <Button 
+                        variant="hero" 
+                        size="sm" 
+                        className="w-full group"
+                        onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}
+                      >
+                        Ver mais informações
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </div>
                   </div>
