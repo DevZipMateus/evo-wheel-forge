@@ -2,108 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Design System - Evolução Rodas e Pneus 
+   Paleta 60/30/10: 60% Branco, 30% Preto, 10% Laranja
+   Todas as cores são HSL para consistência */
 
 @layer base {
   :root {
-    /* Automotive Brand Design System - Evolução Rodas e Pneus */
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
-
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 95%;
-
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
-
-    --primary: 0 0% 5%;
-    --primary-foreground: 0 0% 95%;
-
-    --secondary: 0 0% 18%;
-    --secondary-foreground: 0 0% 95%;
-
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
-
-    --accent: 220 91% 55%;
-    --accent-foreground: 0 0% 95%;
-
+    /* Base colors following 60/30/10 rule */
+    --background: 0 0% 100%;          /* 60% - White background */
+    --foreground: 0 0% 8%;            /* Primary text - Carbon Black */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+    
+    /* Primary colors - 30% usage */
+    --primary: 0 0% 8%;               /* Carbon Black - 30% */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;            /* Light gray */
+    --secondary-foreground: 0 0% 8%;
+    
+    /* Accent colors - 10% usage */
+    --accent: 24 100% 50%;            /* Racing Orange - 10% */
+    --accent-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 95%;
-
-    --border: 0 0% 20%;
-    --input: 0 0% 15%;
-    --ring: 220 91% 55%;
-
-    /* Brand specific colors */
-    --tech-blue: 220 91% 55%;
-    --chrome-silver: 210 8% 75%;
-    --carbon-black: 0 0% 5%;
-    --racing-orange: 25 95% 58%;
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--carbon-black)), hsl(var(--secondary)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--chrome-silver)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--carbon-black)) 0%, hsl(var(--secondary)) 50%, hsl(var(--carbon-black)) 100%);
-
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(var(--tech-blue) / 0.3);
-    --shadow-chrome: 0 10px 30px -10px hsl(var(--chrome-silver) / 0.2);
-    --shadow-deep: 0 25px 50px -12px hsl(var(--carbon-black) / 0.8);
-
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-
-    --radius: 0.5rem;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 24 100% 50%;
+    --radius: 0.75rem;
+    
+    /* Evolução Rodas brand tokens */
+    --carbon-black: 0 0% 8%;          /* Primary brand color */
+    --racing-orange: 24 100% 50%;     /* Accent brand color */
+    --deep-black: 0 0% 3%;            /* Darker variant */
+    --warm-orange: 24 100% 45%;       /* Darker orange variant */
+    --light-orange: 24 100% 55%;      /* Lighter orange variant */
+    --chrome-silver: 0 0% 75%;        /* Supporting neutral */
+    --warm-gray: 0 0% 96%;            /* Light background variant */
+    
+    /* Semantic gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--carbon-black)), hsl(var(--deep-black)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--racing-orange)), hsl(var(--warm-orange)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--carbon-black)) 0%, hsl(var(--deep-black)) 50%, hsl(var(--racing-orange) / 0.1) 100%);
+    
+    /* Semantic shadows */
+    --shadow-glow: 0 10px 40px -10px hsl(var(--racing-orange) / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--carbon-black) / 0.1);
+    --shadow-card: 0 4px 20px -8px hsl(var(--carbon-black) / 0.1);
+    
+    /* Animation variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 8%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 24 100% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -113,14 +94,98 @@ All colors MUST be HSL.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-}
-
-@layer base {
+  
+  /* Global typography */
   * {
     @apply border-border;
   }
-
+  
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-racing-orange rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-warm-orange;
+  }
+}
+
+@layer components {
+  /* Hero gradients */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  /* Custom shadows */
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-background/80 backdrop-blur-md border border-border/50;
+  }
+  
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-smooth hover:translate-y-[-4px] hover:shadow-glow;
+  }
+  
+  .hover-scale {
+    @apply transition-smooth hover:scale-105;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
