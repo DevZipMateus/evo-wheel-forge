@@ -312,6 +312,76 @@ const ProductsPage = () => {
     features: ["Visual Executivo", "Material Premium", "Acabamento Perfeito"],
     badge: "EXECUTIVO",
     badgeColor: "chrome-silver"
+  }, {
+    id: 31,
+    name: "Rodas Mercedes Style Aro 16",
+    category: "RODAS",
+    price: "R$ 1.699",
+    image: "/lovable-uploads/933b1231-052d-4516-88de-632863c9aa54.png",
+    rating: 4.8,
+    features: ["Design Mercedes", "Acabamento Prata", "Liga Leve Premium"],
+    badge: "CLÁSSICO",
+    badgeColor: "chrome-silver"
+  }, {
+    id: 32,
+    name: "Rodas Fiat Sport Aro 15",
+    category: "RODAS",
+    price: "R$ 1.399",
+    image: "/lovable-uploads/56c0f894-4e98-40a8-9051-4409c7d1d475.png",
+    rating: 4.6,
+    features: ["Design Esportivo", "Bicolor Preto/Prata", "Original Fiat"],
+    badge: "ORIGINAL",
+    badgeColor: "tech-blue"
+  }, {
+    id: 33,
+    name: "Rodas Mercedes Elegance Aro 17",
+    category: "RODAS",
+    price: "R$ 1.899",
+    image: "/lovable-uploads/01afea53-dfaa-489c-9dfd-9627d08e3b96.png",
+    rating: 4.7,
+    features: ["Elegância Premium", "Acabamento Refinado", "5 Furos"],
+    badge: "ELEGANCE",
+    badgeColor: "chrome-silver"
+  }, {
+    id: 34,
+    name: "Rodas Chrome Polished Aro 16",
+    category: "RODAS",
+    price: "R$ 2.199",
+    image: "/lovable-uploads/0067f25c-3ac4-4e2f-87c7-49d6cbf90803.png",
+    rating: 4.9,
+    features: ["Acabamento Cromado", "Polimento Espelhado", "Centro Decorativo"],
+    badge: "CHROME",
+    badgeColor: "racing-orange"
+  }, {
+    id: 35,
+    name: "Kit Rodas Clássicas Aro 15",
+    category: "KITS",
+    price: "R$ 2.799",
+    image: "/lovable-uploads/507cd708-f01d-4b28-85b7-72700c07feba.png",
+    rating: 4.8,
+    features: ["2 Acabamentos", "Design Clássico", "Kit Completo"],
+    badge: "TWIN SET",
+    badgeColor: "chrome-silver"
+  }, {
+    id: 36,
+    name: "Rodas Fiat Toro Aro 16",
+    category: "RODAS",
+    price: "R$ 1.599",
+    image: "/lovable-uploads/0ca5b902-fef6-4375-a840-ea251430b31c.png",
+    rating: 4.7,
+    features: ["Design Moderno", "Acabamento Diamantado", "Original Fiat"],
+    badge: "TORO LINE",
+    badgeColor: "tech-blue"
+  }, {
+    id: 37,
+    name: "Rodas Fiat Black Diamond Aro 17",
+    category: "RODAS",
+    price: "R$ 1.799",
+    image: "/lovable-uploads/74e27ead-468e-4b4c-9a8d-3c34374cf731.png",
+    rating: 4.8,
+    features: ["Acabamento Black Diamond", "Design Esportivo", "Ultra Modernas"],
+    badge: "BLACK DIAMOND",
+    badgeColor: "racing-orange"
   }];
   return <div className="min-h-screen bg-background">
       <TopBar />
