@@ -1,29 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, CreditCard, Truck, Shield, Clock } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-carbon-black text-foreground">
+  return <footer className="bg-carbon-black text-foreground">
       <div className="container mx-auto px-4 py-16">
         {/* Payment & Shipping Info */}
         <div className="grid md:grid-cols-4 gap-8 mb-12 pb-8 border-b border-border">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-tech-blue/10 rounded-full flex items-center justify-center">
+            <div className="w-12 h-12 bg-tech-blue/10 rounded-full flex items-center justify-center bg-slate-50">
               <CreditCard className="w-6 h-6 text-tech-blue" />
             </div>
             <div>
-              <h3 className="font-semibold">Pagamento Seguro</h3>
+              <h3 className="font-semibold text-zinc-50">Pagamento Seguro</h3>
               <p className="text-sm text-muted-foreground">Cartão, PIX ou Boleto</p>
             </div>
           </div>
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-racing-orange/10 rounded-full flex items-center justify-center">
-              <Truck className="w-6 h-6 text-racing-orange" />
-            </div>
+            
             <div>
-              <h3 className="font-semibold">Frete Grátis</h3>
-              <p className="text-sm text-muted-foreground">Acima de R$ 299</p>
+              
+              
             </div>
           </div>
           <div className="flex items-center space-x-3">
@@ -31,16 +27,16 @@ const Footer = () => {
               <Shield className="w-6 h-6 text-chrome-silver" />
             </div>
             <div>
-              <h3 className="font-semibold">Garantia Estendida</h3>
+              <h3 className="font-semibold text-slate-50">Garantia Estendida</h3>
               <p className="text-sm text-muted-foreground">Até 5 anos</p>
             </div>
           </div>
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-tech-blue/10 rounded-full flex items-center justify-center">
-              <Clock className="w-6 h-6 text-tech-blue" />
+              <Clock className="w-6 h-6 text-tech-blue bg-gray-50" />
             </div>
             <div>
-              <h3 className="font-semibold">Instalação Rápida</h3>
+              <h3 className="font-semibold text-slate-50">Instalação Rápida</h3>
               <p className="text-sm text-muted-foreground">Agendamento online</p>
             </div>
           </div>
@@ -50,11 +46,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" 
-                alt="Evolução Rodas e Pneus"
-                className="h-10 w-auto"
-              />
+              <img src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" alt="Evolução Rodas e Pneus" className="h-10 w-auto" />
             </div>
             <p className="text-muted-foreground text-sm">
               Transformando veículos com rodas esportivas e pneus de alta performance desde 2020.
@@ -131,21 +123,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Newsletter</h3>
-            <p className="text-muted-foreground text-sm">
-              Receba ofertas exclusivas e novidades em primeira mão.
-            </p>
-            <div className="space-y-2">
-              <Input 
-                placeholder="Seu e-mail" 
-                className="bg-secondary/50 border-border"
-              />
-              <Button variant="hero" size="sm" className="w-full">
-                Inscrever-se
-              </Button>
-            </div>
-          </div>
+          
         </div>
 
         {/* Bottom */}
@@ -165,8 +143,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

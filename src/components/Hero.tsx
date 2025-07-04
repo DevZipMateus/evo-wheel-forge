@@ -1,16 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Zap, Shield } from "lucide-react";
 import heroWheel from "@/assets/hero-wheel.jpg";
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden mt-12">
+  return <section id="home" className="relative min-h-screen flex items-center overflow-hidden mt-12">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-hero"></div>
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 sm:opacity-25 md:opacity-30 scale-105 sm:scale-100"
-        style={{ backgroundImage: `url(/lovable-uploads/c11551bc-2364-409b-b4e3-1c952d86414d.png)` }}
-      ></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 sm:opacity-25 md:opacity-30 scale-105 sm:scale-100" style={{
+      backgroundImage: `url(/lovable-uploads/c11551bc-2364-409b-b4e3-1c952d86414d.png)`
+    }}></div>
       
       {/* Content */}
       <div className="relative container mx-auto px-4 py-12 sm:py-16 md:py-20 lg:py-24">
@@ -74,11 +71,7 @@ const Hero = () => {
             <div className="relative w-96 h-96 mx-auto flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-accent rounded-full animate-pulse-glow opacity-10"></div>
               <div className="absolute inset-8 bg-carbon-black/80 rounded-full backdrop-blur-sm flex items-center justify-center border border-racing-orange/20">
-                <img 
-                  src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" 
-                  alt="Evolução Rodas e Pneus - Logo"
-                  className="w-48 h-auto max-w-full object-contain"
-                />
+                <img src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" alt="Evolução Rodas e Pneus - Logo" className="w-48 h-auto max-w-full object-contain" />
               </div>
             </div>
           </div>
@@ -87,12 +80,8 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-tech-blue rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-tech-blue rounded-full mt-2 animate-bounce"></div>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

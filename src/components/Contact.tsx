@@ -3,15 +3,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-20 bg-gradient-primary">
+  return <section id="contact" className="py-20 bg-gradient-primary">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-foreground">Entre em </span>
+            <span className="text-slate-50">Entre em </span>
             <span className="bg-gradient-accent bg-clip-text text-transparent">Contato</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -49,10 +47,7 @@ const Contact = () => {
               
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">Mensagem</label>
-                <Textarea 
-                  placeholder="Descreva o que você está procurando..."
-                  rows={4}
-                />
+                <Textarea placeholder="Descreva o que você está procurando..." rows={4} />
               </div>
               
               <Button variant="hero" size="lg" className="w-full">
@@ -125,8 +120,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

@@ -8,10 +8,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-carbon-black">
+  return <div className="min-h-screen bg-carbon-black">
       <TopBar />
       <Header />
       <Hero />
@@ -21,7 +19,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              <span className="text-foreground">Nossos </span>
+              <span className="text-slate-50">Nossos </span>
               <span className="bg-gradient-accent bg-clip-text text-transparent">Produtos</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
@@ -43,8 +41,6 @@ const Index = () => {
       <Testimonials />
       <Contact />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

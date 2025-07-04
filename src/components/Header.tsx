@@ -1,19 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Menu, Search, User, ShoppingCart, Phone } from "lucide-react";
-
 const Header = () => {
-  return (
-    <header className="fixed top-0 w-full bg-carbon-black/95 backdrop-blur-sm z-50">
+  return <header className="fixed top-0 w-full bg-carbon-black/95 backdrop-blur-sm z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" 
-              alt="Evolução Rodas e Pneus - Logo"
-              className="h-12 w-auto"
-            />
+            <img src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" alt="Evolução Rodas e Pneus - Logo" className="h-12 w-auto" />
           </div>
 
           {/* Navigation & Search */}
@@ -37,12 +31,9 @@ const Header = () => {
             </nav>
 
             {/* Search Bar */}
-            <div className="hidden lg:flex items-center space-x-2 bg-secondary/50 rounded-full px-4 py-2 min-w-80">
+            <div className="hidden lg:flex items-center space-x-2 rounded-full px-4 py-2 min-w-80 bg-gray-50">
               <Search className="w-4 h-4 text-muted-foreground" />
-              <Input 
-                placeholder="Buscar produtos..." 
-                className="border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
-              />
+              <Input placeholder="Buscar produtos..." className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 bg-transparent" />
             </div>
           </div>
 
@@ -68,8 +59,6 @@ const Header = () => {
           </Button>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
