@@ -19,11 +19,6 @@ const Header = () => {
               <a href="/produtos" className="text-white hover:text-racing-orange transition-colors">
                 Produtos
               </a>
-              
-              <a href="/sobre" className="text-white hover:text-racing-orange transition-colors">
-                Sobre
-              </a>
-              
             </nav>
 
             {/* Search Bar */}
