@@ -8,17 +8,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="relative">
-              <div className="w-8 h-8 bg-gradient-accent rounded-full animate-spin-slow"></div>
-              <div className="absolute inset-0 w-8 h-8 border-2 border-tech-blue rounded-full"></div>
-            </div>
-            <div className="text-xl font-bold">
-              <span className="text-foreground">EVOLUÇÃO</span>
-              <div className="text-sm font-medium text-muted-foreground -mt-1">
-                RODAS & PNEUS
-              </div>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" 
+              alt="Evolução Rodas e Pneus - Logo"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Navigation & Search */}
