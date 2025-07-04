@@ -29,12 +29,18 @@ const Index = () => {
           </div>
           <ProductCarousel />
           <div className="text-center mt-12">
-            <Link to="/produtos">
-              <Button variant="hero" size="lg" className="group">
-                Ver Todos os Produtos
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/produtos">
+                <Button variant="hero" size="lg" className="group">
+                  Veja alguns de nossos produtos
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Button variant="accent" size="lg" className="group" onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}>
+                Veja todos os modelos e tamanhos aqui
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
