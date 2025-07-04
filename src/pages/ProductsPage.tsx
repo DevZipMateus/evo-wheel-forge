@@ -1,22 +1,18 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, ArrowRight, Zap, Shield, Award, ShoppingCart, Filter } from "lucide-react";
+import { Star, ArrowRight, Zap, Shield, Award, ShoppingCart } from "lucide-react";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const ProductsPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState("TODOS");
-  
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
-  const categories = ["TODOS", "RODAS", "PNEUS", "KITS", "ACESSÓRIOS"];
   
   const products = [
     {
@@ -109,10 +105,6 @@ const ProductsPage = () => {
     }
   ];
 
-  const filteredProducts = selectedCategory === "TODOS" 
-    ? products 
-    : products.filter(product => product.category === selectedCategory);
-
   return (
     <div className="min-h-screen bg-background">
       <TopBar />
@@ -134,25 +126,9 @@ const ProductsPage = () => {
             </p>
           </div>
 
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? "hero" : "outline"}
-                size="sm"
-                onClick={() => setSelectedCategory(category)}
-                className="flex items-center space-x-2"
-              >
-                <Filter className="w-4 h-4" />
-                <span>{category}</span>
-              </Button>
-            ))}
-          </div>
-
           {/* Product Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12">
-            {filteredProducts.map((product) => (
+            {products.map((product) => (
               <Card key={product.id} className="group hover:shadow-glow transition-all duration-300 bg-card/80 backdrop-blur-sm border-border/50">
                 <CardContent className="p-6">
                   {/* Product Image */}
