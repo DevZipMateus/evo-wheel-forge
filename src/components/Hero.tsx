@@ -8,13 +8,13 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-hero"></div>
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 sm:opacity-25 md:opacity-30 scale-105 sm:scale-100"
         style={{ backgroundImage: `url(/lovable-uploads/c11551bc-2364-409b-b4e3-1c952d86414d.png)` }}
       ></div>
       
       {/* Content */}
-      <div className="relative container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative container mx-auto px-4 py-12 sm:py-16 md:py-20 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-4">
