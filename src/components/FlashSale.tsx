@@ -157,7 +157,7 @@ const FlashSale = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <Button variant="racing" size="sm" className="w-full group">
+                  <Button variant="accent" size="sm" className="w-full group">
                     <ShoppingCart className="w-4 h-4 mr-2" />
                     Adicionar ao Carrinho
                   </Button>
