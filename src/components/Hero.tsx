@@ -26,7 +26,7 @@ const Hero = () => {
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
                   RODAS
                 </span>
-                <span className="text-foreground"> & </span>
+                <span className="text-slate-50"> & </span>
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
                   PNEUS
                 </span>
@@ -60,12 +60,7 @@ const Hero = () => {
                 Ver Produtos
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-slate-50"
-                onClick={() => window.open('https://wa.me/5511947783837', '_blank')}
-              >
+              <Button variant="outline" size="lg" className="text-slate-50" onClick={() => window.open('https://wa.me/5511947783837', '_blank')}>
                 Fale Conosco
               </Button>
             </div>
