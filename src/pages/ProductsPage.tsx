@@ -312,6 +312,36 @@ const ProductsPage = () => {
     features: ["Visual Executivo", "Material Premium", "Acabamento Perfeito"],
     badge: "EXECUTIVO",
     badgeColor: "chrome-silver"
+  }, {
+    id: 31,
+    name: "Rodas Concave Aro 21",
+    category: "RODAS",
+    price: "R$ 3.199",
+    image: "/lovable-uploads/c11551bc-2364-409b-b4e3-1c952d86414d.png",
+    rating: 4.9,
+    features: ["Design Concave Profundo", "Acabamento Black Piano", "Ultra Leves"],
+    badge: "EXCLUSIVE",
+    badgeColor: "racing-orange"
+  }, {
+    id: 32,
+    name: "Kit Racing Pro Aro 19",
+    category: "KITS", 
+    price: "R$ 4.599",
+    image: "/lovable-uploads/dd38c678-40ff-4941-a217-922583dc0013.png",
+    rating: 4.8,
+    features: ["4 Rodas Racing", "4 Pneus Sport", "Instalação Premium"],
+    badge: "PRO SERIES",
+    badgeColor: "chrome-silver"
+  }, {
+    id: 33,
+    name: "Rodas Multiface Premium Aro 18",
+    category: "RODAS",
+    price: "R$ 2.399",
+    image: "/lovable-uploads/edfa4c90-65cb-44c6-8d4b-4cec188590ad.png",
+    rating: 4.7,
+    features: ["Design Multiface", "Acabamento Grafite", "Resistência Máxima"],
+    badge: "PREMIUM",
+    badgeColor: "tech-blue"
   }];
   return <div className="min-h-screen bg-background">
       <TopBar />
