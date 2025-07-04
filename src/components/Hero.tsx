@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-hero"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: `url(${heroWheel})` }}
+        style={{ backgroundImage: `url(/lovable-uploads/c11551bc-2364-409b-b4e3-1c952d86414d.png)` }}
       ></div>
       
       {/* Content */}
@@ -24,7 +24,7 @@ const Hero = () => {
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="text-foreground">EVOLUÇÃO</span>
+                <span className="text-white">EVOLUÇÃO</span>
                 <br />
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
                   RODAS
