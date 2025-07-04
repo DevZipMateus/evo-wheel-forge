@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, ArrowRight, Zap, Shield, Award } from "lucide-react";
+import { Star, ArrowRight, Zap, Shield, Award, ShoppingCart, Filter } from "lucide-react";
 
 const Products = () => {
+  const [selectedCategory, setSelectedCategory] = useState("TODOS");
+  
+  const categories = ["TODOS", "RODAS", "PNEUS", "KITS", "ACESSÓRIOS"];
+  
   const products = [
     {
       id: 1,
@@ -37,8 +42,45 @@ const Products = () => {
       features: ["4 Rodas + 4 Pneus", "Instalação Grátis", "Balanceamento"],
       badge: "OFERTA",
       badgeColor: "chrome-silver"
+    },
+    {
+      id: 4,
+      name: "Pneus Bridgestone 195/65R15",
+      category: "PNEUS",
+      price: "R$ 349",
+      image: "/placeholder.svg",
+      rating: 4.7,
+      features: ["Economia de Combustível", "Durabilidade", "Conforto"],
+      badge: "POPULAR",
+      badgeColor: "tech-blue"
+    },
+    {
+      id: 5,
+      name: "Rodas Liga Leve Aro 16",
+      category: "RODAS",
+      price: "R$ 1.299",
+      image: "/placeholder.svg",
+      rating: 4.6,
+      features: ["Acabamento Premium", "Leveza", "Resistência"],
+      badge: "NOVO",
+      badgeColor: "racing-orange"
+    },
+    {
+      id: 6,
+      name: "Calotas Esportivas Aro 14",
+      category: "ACESSÓRIOS",
+      price: "R$ 199",
+      image: "/placeholder.svg",
+      rating: 4.4,
+      features: ["Fácil Instalação", "Design Moderno", "Resistente"],
+      badge: "PROMOÇÃO",
+      badgeColor: "chrome-silver"
     }
   ];
+
+  const filteredProducts = selectedCategory === "TODOS" 
+    ? products 
+    : products.filter(product => product.category === selectedCategory);
 
   return (
     <section id="products" className="py-20 bg-secondary/20">
@@ -57,9 +99,25 @@ const Products = () => {
           </p>
         </div>
 
+        {/* Category Filter */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {categories.map((category) => (
+            <Button
+              key={category}
+              variant={selectedCategory === category ? "hero" : "outline"}
+              size="sm"
+              onClick={() => setSelectedCategory(category)}
+              className="flex items-center space-x-2"
+            >
+              <Filter className="w-4 h-4" />
+              <span>{category}</span>
+            </Button>
+          ))}
+        </div>
+
         {/* Product Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <Card key={product.id} className="group hover:shadow-glow transition-all duration-300 bg-card/80 backdrop-blur-sm border-border/50">
               <CardContent className="p-6">
                 {/* Product Image */}
@@ -106,14 +164,20 @@ const Products = () => {
                   </div>
 
                   {/* Price & CTA */}
-                  <div className="flex items-center justify-between pt-4 border-t border-border">
-                    <div>
-                      <p className="text-2xl font-bold text-foreground">{product.price}</p>
-                      <p className="text-sm text-muted-foreground">à vista</p>
+                  <div className="space-y-3 pt-4 border-t border-border">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-2xl font-bold text-foreground">{product.price}</p>
+                        <p className="text-sm text-muted-foreground">à vista</p>
+                      </div>
+                      <Button variant="outline" size="sm" className="group">
+                        Ver Mais
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </Button>
                     </div>
-                    <Button variant="hero" size="sm" className="group">
-                      Ver Mais
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <Button variant="hero" size="sm" className="w-full group">
+                      <ShoppingCart className="w-4 h-4 mr-2" />
+                      Adicionar ao Carrinho
                     </Button>
                   </div>
                 </div>

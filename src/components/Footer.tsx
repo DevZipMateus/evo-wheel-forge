@@ -1,12 +1,52 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, CreditCard, Truck, Shield, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-carbon-black text-foreground">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Payment & Shipping Info */}
+        <div className="grid md:grid-cols-4 gap-8 mb-12 pb-8 border-b border-border">
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-tech-blue/10 rounded-full flex items-center justify-center">
+              <CreditCard className="w-6 h-6 text-tech-blue" />
+            </div>
+            <div>
+              <h3 className="font-semibold">Pagamento Seguro</h3>
+              <p className="text-sm text-muted-foreground">Cartão, PIX ou Boleto</p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-racing-orange/10 rounded-full flex items-center justify-center">
+              <Truck className="w-6 h-6 text-racing-orange" />
+            </div>
+            <div>
+              <h3 className="font-semibold">Frete Grátis</h3>
+              <p className="text-sm text-muted-foreground">Acima de R$ 299</p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-chrome-silver/10 rounded-full flex items-center justify-center">
+              <Shield className="w-6 h-6 text-chrome-silver" />
+            </div>
+            <div>
+              <h3 className="font-semibold">Garantia Estendida</h3>
+              <p className="text-sm text-muted-foreground">Até 5 anos</p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-tech-blue/10 rounded-full flex items-center justify-center">
+              <Clock className="w-6 h-6 text-tech-blue" />
+            </div>
+            <div>
+              <h3 className="font-semibold">Instalação Rápida</h3>
+              <p className="text-sm text-muted-foreground">Agendamento online</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
@@ -39,13 +79,37 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Links Rápidos</h3>
+            <h3 className="text-lg font-semibold">Navegação</h3>
             <ul className="space-y-2">
               <li><a href="#home" className="text-muted-foreground hover:text-tech-blue transition-colors">Início</a></li>
               <li><a href="#products" className="text-muted-foreground hover:text-tech-blue transition-colors">Produtos</a></li>
               <li><a href="#services" className="text-muted-foreground hover:text-tech-blue transition-colors">Serviços</a></li>
               <li><a href="#about" className="text-muted-foreground hover:text-tech-blue transition-colors">Sobre Nós</a></li>
               <li><a href="#contact" className="text-muted-foreground hover:text-tech-blue transition-colors">Contato</a></li>
+            </ul>
+          </div>
+
+          {/* Produtos */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Produtos</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Rodas Esportivas</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Pneus Performance</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Kits Completos</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Acessórios</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Serviços</a></li>
+            </ul>
+          </div>
+
+          {/* Suporte */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Suporte</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Central de Ajuda</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Como Comprar</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Trocas e Devoluções</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">Garantia</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">FAQ</a></li>
             </ul>
           </div>
 

@@ -4,7 +4,7 @@ import heroWheel from "@/assets/hero-wheel.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden mt-12">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-hero"></div>
       <div 
