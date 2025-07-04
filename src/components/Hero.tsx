@@ -69,16 +69,16 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Visual Element */}
+          {/* Company Logo */}
           <div className="relative lg:block hidden">
-            <div className="relative w-96 h-96 mx-auto">
-              <div className="absolute inset-0 bg-gradient-accent rounded-full animate-pulse-glow opacity-20"></div>
-              <div className="absolute inset-4 bg-card rounded-full flex items-center justify-center">
-                <div className="w-64 h-64 bg-gradient-accent rounded-full animate-spin-slow flex items-center justify-center">
-                  <div className="w-48 h-48 bg-background rounded-full flex items-center justify-center">
-                    <div className="w-32 h-32 bg-tech-blue rounded-full animate-pulse-glow"></div>
-                  </div>
-                </div>
+            <div className="relative w-96 h-96 mx-auto flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-accent rounded-full animate-pulse-glow opacity-10"></div>
+              <div className="absolute inset-8 bg-card/80 rounded-full backdrop-blur-sm flex items-center justify-center border border-tech-blue/20">
+                <img 
+                  src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" 
+                  alt="Evolução Rodas e Pneus - Logo"
+                  className="w-48 h-auto max-w-full object-contain"
+                />
               </div>
             </div>
           </div>
