@@ -159,7 +159,7 @@ const Index = () => {
               <Button variant="accent" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}>
                 <span className="hidden lg:inline">Veja todos os modelos e tamanhos aqui</span>
                 <span className="hidden sm:inline lg:hidden">Ver Catálogo Completo</span>
-                <span className="sm:hidden">Ver Site completo</span>
+                <span className="sm:hidden">Ver Loja completa</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
