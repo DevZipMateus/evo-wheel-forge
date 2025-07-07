@@ -162,12 +162,14 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-2xl mx-auto">
               <Link to="/produtos" className="w-full sm:w-auto">
                 <Button variant="hero" size="lg" className="group w-full sm:w-auto">
-                  Veja alguns de nossos produtos
+                  <span className="hidden sm:inline">Veja alguns de nossos produtos</span>
+                  <span className="sm:hidden">Ver Produtos</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Button variant="accent" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}>
-                Veja todos os modelos e tamanhos aqui
+                <span className="hidden sm:inline">Veja todos os modelos e tamanhos aqui</span>
+                <span className="sm:hidden">Ver Catálogo</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
