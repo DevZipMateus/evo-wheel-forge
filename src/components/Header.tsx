@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Search, User, ShoppingCart, Phone } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,12 +18,12 @@ const Header = () => {
           {/* Navigation & Search */}
           <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8">
             <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-              <a href="/" className="text-white hover:text-racing-orange transition-colors text-sm lg:text-base">
+              <Link to="/" className="text-white hover:text-racing-orange transition-colors text-sm lg:text-base">
                 Início
-              </a>
-              <a href="/produtos" className="text-white hover:text-racing-orange transition-colors text-sm lg:text-base">
+              </Link>
+              <Link to="/produtos" className="text-white hover:text-racing-orange transition-colors text-sm lg:text-base">
                 Produtos
-              </a>
+              </Link>
             </nav>
 
             {/* Search Bar */}
@@ -33,12 +34,12 @@ const Header = () => {
             
             {/* Tablet Navigation */}
             <nav className="hidden md:flex lg:hidden items-center space-x-4">
-              <a href="/" className="text-white hover:text-racing-orange transition-colors text-sm">
+              <Link to="/" className="text-white hover:text-racing-orange transition-colors text-sm">
                 Início
-              </a>
-              <a href="/produtos" className="text-white hover:text-racing-orange transition-colors text-sm">
+              </Link>
+              <Link to="/produtos" className="text-white hover:text-racing-orange transition-colors text-sm">
                 Produtos
-              </a>
+              </Link>
             </nav>
           </div>
 
@@ -64,20 +65,20 @@ const Header = () => {
             
             {/* Navigation */}
             <nav className="flex flex-col space-y-4">
-              <a 
-                href="/" 
+              <Link 
+                to="/" 
                 className="text-white hover:text-racing-orange transition-colors text-lg py-2 border-b border-gray-700"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Início
-              </a>
-              <a 
-                href="/produtos" 
+              </Link>
+              <Link 
+                to="/produtos" 
                 className="text-white hover:text-racing-orange transition-colors text-lg py-2 border-b border-gray-700"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Produtos
-              </a>
+              </Link>
             </nav>
             
             {/* Contact Info */}
