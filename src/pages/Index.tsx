@@ -12,34 +12,27 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Star, Award, Users, Target, Heart, Shield, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 const Index = () => {
-  const values = [
-    {
-      icon: CheckCircle,
-      title: "Comprometimento com a qualidade",
-      description: "Entrega no prazo com produtos de alta performance"
-    },
-    {
-      icon: Heart,
-      title: "Respeito e ética",
-      description: "Em todas as relações comerciais e pessoais"
-    },
-    {
-      icon: Star,
-      title: "Excelência no atendimento",
-      description: "Antes, durante e depois da compra"
-    },
-    {
-      icon: Zap,
-      title: "Inovação constante",
-      description: "Acompanhando as tendências do mercado automotivo"
-    },
-    {
-      icon: Shield,
-      title: "Transparência e confiança",
-      description: "Pilares do nosso relacionamento com clientes"
-    }
-  ];
-
+  const values = [{
+    icon: CheckCircle,
+    title: "Comprometimento com a qualidade",
+    description: "Entrega no prazo com produtos de alta performance"
+  }, {
+    icon: Heart,
+    title: "Respeito e ética",
+    description: "Em todas as relações comerciais e pessoais"
+  }, {
+    icon: Star,
+    title: "Excelência no atendimento",
+    description: "Antes, durante e depois da compra"
+  }, {
+    icon: Zap,
+    title: "Inovação constante",
+    description: "Acompanhando as tendências do mercado automotivo"
+  }, {
+    icon: Shield,
+    title: "Transparência e confiança",
+    description: "Pilares do nosso relacionamento com clientes"
+  }];
   return <div className="min-h-screen bg-carbon-black">
       <TopBar />
       <Header />
@@ -117,12 +110,7 @@ const Index = () => {
                 do setor, fruto de um trabalho sério, transparente e focado na satisfação 
                 total dos nossos clientes.
               </p>
-              <Button 
-                variant="hero" 
-                size="lg"
-                className="w-full sm:w-auto"
-                onClick={() => window.open('https://wa.me/5511947783837', '_blank')}
-              >
+              <Button variant="hero" size="lg" className="w-full sm:w-auto" onClick={() => window.open('https://wa.me/5511947783837', '_blank')}>
                 Fale Conosco
               </Button>
             </div>
@@ -171,7 +159,7 @@ const Index = () => {
               <Button variant="accent" size="lg" className="group w-full sm:w-auto" onClick={() => window.open('https://shopee.com.br/evolucaorodas', '_blank')}>
                 <span className="hidden lg:inline">Veja todos os modelos e tamanhos aqui</span>
                 <span className="hidden sm:inline lg:hidden">Ver Catálogo Completo</span>
-                <span className="sm:hidden">Ver Catálogo</span>
+                <span className="sm:hidden">Ver Site completo</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -196,8 +184,7 @@ const Index = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {values.map((value, index) => (
-              <Card key={index} className="group hover:shadow-glow transition-all duration-300 bg-card/80 backdrop-blur-sm">
+            {values.map((value, index) => <Card key={index} className="group hover:shadow-glow transition-all duration-300 bg-card/80 backdrop-blur-sm">
                 <CardContent className="p-6 sm:p-8 text-center">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                     <value.icon className="w-6 h-6 sm:w-8 sm:h-8 text-foreground" />
@@ -205,8 +192,7 @@ const Index = () => {
                   <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{value.title}</h3>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{value.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
