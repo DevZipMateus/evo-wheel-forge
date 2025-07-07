@@ -7,29 +7,39 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return <header className="fixed top-0 w-full bg-carbon-black/95 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-2 sm:py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" alt="Evolução Rodas e Pneus - Logo" className="h-12 w-auto" />
+            <img src="/lovable-uploads/9a933538-7e02-46bb-87a0-91794efe3f0e.png" alt="Evolução Rodas e Pneus - Logo" className="h-10 sm:h-12 w-auto" />
           </div>
 
           {/* Navigation & Search */}
-          <div className="flex items-center space-x-8">
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="/" className="text-white hover:text-racing-orange transition-colors">
+          <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+              <a href="/" className="text-white hover:text-racing-orange transition-colors text-sm lg:text-base">
                 Início
               </a>
-              <a href="/produtos" className="text-white hover:text-racing-orange transition-colors">
+              <a href="/produtos" className="text-white hover:text-racing-orange transition-colors text-sm lg:text-base">
                 Produtos
               </a>
             </nav>
 
             {/* Search Bar */}
-            <div className="hidden lg:flex items-center space-x-2 rounded-full px-4 py-2 w-80 max-w-[300px] bg-gray-50">
+            <div className="hidden xl:flex items-center space-x-2 rounded-full px-4 py-2 w-64 xl:w-80 max-w-[300px] bg-gray-50">
               <Search className="w-4 h-4 text-muted-foreground" />
-              <Input placeholder="Buscar produtos..." className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 bg-transparent" />
+              <Input placeholder="Buscar produtos..." className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 bg-transparent text-sm" />
             </div>
+            
+            {/* Tablet Navigation */}
+            <nav className="hidden md:flex lg:hidden items-center space-x-4">
+              <a href="/" className="text-white hover:text-racing-orange transition-colors text-sm">
+                Início
+              </a>
+              <a href="/produtos" className="text-white hover:text-racing-orange transition-colors text-sm">
+                Produtos
+              </a>
+            </nav>
           </div>
 
       {/* Mobile Menu */}

@@ -50,7 +50,7 @@ const ProductCarousel = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4">
+    <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
       <Carousel
         plugins={[
           Autoplay({
@@ -59,10 +59,10 @@ const ProductCarousel = () => {
         ]}
         className="w-full"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-2 md:-ml-4">
           {productImages.map((image, index) => (
-            <CarouselItem key={index}>
-              <div className="relative aspect-square sm:aspect-video rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm">
+            <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+              <div className="relative aspect-square rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm">
                 <img
                   src={image}
                   alt={`Produto ${index + 1}`}
@@ -73,8 +73,8 @@ const ProductCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
+        <CarouselPrevious className="left-2 sm:left-4 h-8 w-8 sm:h-10 sm:w-10" />
+        <CarouselNext className="right-2 sm:right-4 h-8 w-8 sm:h-10 sm:w-10" />
       </Carousel>
     </div>
   );
